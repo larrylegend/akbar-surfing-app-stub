@@ -1,0 +1,6 @@
+<h2>All locations</h2>
+<% @locations.each do |model| %>
+	<h3><%= location.name %></h3>
+	<p><%= location.temperature %>,<%= location.condtions %></p>
+<% end %>
+<a href="/">Back to Home</a>

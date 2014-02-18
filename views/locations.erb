@@ -1,0 +1,13 @@
+<h2>All locations</h2>
+<table border="1">
+<% @locations.each do |location| %>
+	<tr><td>
+			<h3><%= location.name %></h3>
+		</td>
+		<td>
+			<p><%= location.temperature %>,<%= location.conditions %></p>
+		</td>
+	</tr>
+<% end %>
+</table>
+<a href="/">Back to Home</a>
