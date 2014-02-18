@@ -122,12 +122,3 @@ delete '/api/locations/:id' do
 		object = {:error => "There was an error."}
 	end
 end
-
-delete '/locations/:id' do
-	if Location.where(:id => params['id']).destroy_all
-		'Deleted.'
-	else 
-		'There was an error.'
-	end
-end
-
